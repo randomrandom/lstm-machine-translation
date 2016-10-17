@@ -13,6 +13,11 @@ The model uses embedding vectors to store the words understandings.
 "#" is used as a "GO" symbol.
 "." is used as a "\<EOS>" symbol.
 
+## Further development
+
+- Download real dataset.
+- Add buckets and padding in order to support sentences with different lengths
+
 ## Possible tunings
 
 At the moment the model is using 4 unrollings, followed by a "GO" symbol.
