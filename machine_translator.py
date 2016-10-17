@@ -43,7 +43,6 @@ train_size = len(train_text)
 print train_size, train_text[:64]
 print valid_size, valid_text[:64]
 
-
 vocabulary_size = 25000
 unk_sign = 'UNK'
 eos_sign = '.'
@@ -142,11 +141,9 @@ def random_distribution():
   b = np.random.uniform(0.0, 1.0, size=[1, vocabulary_size])
   return b/np.sum(b, 1)[:,None]
 
-# print train_batches._words_count
 print len(train_text)
 print len(dictionary)
 print len(reverse_dictionary)
-# print train_batches._cursor
 reverse_dictionary[24999]
 
 batch_size=64
@@ -273,8 +270,6 @@ def sequences2sentence(sequences, input1_size):
 train_batches = BatchGenerator(train_text, batch_size, num_unrollings)
 valid_batches = BatchGenerator(valid_text, 1, num_unrollings)
 
-#print batches2sentence(train_batches.next())
-#print batches2sentence(train_batches.next())
 t_batches = train_batches.next()
 print batches2sentence(t_batches)
 train_inputs = BatchGenerator.create_input_sequence(t_batches, batch_size, num_unrollings, num_unrollings + 1)
@@ -282,8 +277,6 @@ print sequences2sentence(train_inputs, num_unrollings)
 t_labels = BatchGenerator.create_label_sequence(train_inputs, batch_size, num_unrollings, num_unrollings + 1)
 print sequences2sentence(t_labels, 0)
 print "Validation:"
-#print batches2sentence(valid_batches.next())
-#print batches2sentence(valid_batches.next())
 v_batch = valid_batches.next()
 print batches2sentence(v_batch)
 valid_inputs = BatchGenerator.create_input_sequence(v_batch, 1, num_unrollings, num_unrollings + 1)
