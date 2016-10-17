@@ -5,7 +5,7 @@ Implementation of Machine Translation via TensorFlow
 
 This code implements the "Sequence to Sequence Learning with Neural Networks" published by Google (https://arxiv.org/abs/1409.3215). The model is suitable for machine translation and is considered to be among the recent state-of-the art models used by Google for Machine Translation.
 
-There are many improvements that can be added in data the data preprocessing part that can further lower the training error and accuracy, however the current model should be a good working prototype to begin with.
+There are many improvements that can be added in data the data preprocessing part that can further lower the training error and perplexity, however the current model should be a good working prototype to begin with.
 
 For convenience we don't use real translated data, but in this case have decided to translate a sentence to a new sentence with reversed words and word order (e.g. "how are you" -> "uoy era woh"). You can reference the original paper why this mimics quite well the complexity of learning how to translate a spoken language.
 
