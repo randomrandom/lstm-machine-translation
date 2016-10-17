@@ -142,11 +142,11 @@ def random_distribution():
   b = np.random.uniform(0.0, 1.0, size=[1, vocabulary_size])
   return b/np.sum(b, 1)[:,None]
 
-print train_batches._words_count
+# print train_batches._words_count
 print len(train_text)
 print len(dictionary)
 print len(reverse_dictionary)
-print train_batches._cursor
+# print train_batches._cursor
 reverse_dictionary[24999]
 
 batch_size=64
