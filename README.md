@@ -3,7 +3,7 @@ Implementation of Machine Translation via TensorFlow
 
 ## Overview
 
-This code implements the "Sequence to Sequence Learning with Neural Networks" published by Google (https://arxiv.org/abs/1409.3215). The model is suitable for machine translation and is considered to be among the recent state-of-the art models used by Google for Machine Translation.
+This code implements the "Sequence to Sequence Learning with Neural Networks" published by Google (https://arxiv.org/abs/1409.3215). The model is suitable for machine translation and is considered to be among the recent state-of-the art models used by Google for Machine Translation. It represents a pretty basic RNN built using LSTMs and embedding vectors.
 
 There are many improvements that can be added in data the data preprocessing part that can further lower the training error and perplexity, however the current model should be a good working prototype to begin with.
 
@@ -22,6 +22,7 @@ The model uses embedding vectors to store the words understandings.
 
 At the moment the model is using 4 unrollings, followed by a "GO" symbol.
 The number of layers, max number of nodes and embedding size are easily tunable to test different configurations.
+Dropout can be increased as well as epochs.
 
 ## Results
 
