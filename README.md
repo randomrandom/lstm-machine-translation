@@ -28,3 +28,12 @@ Minibatch perplexity: 37.87
 Validation set perplexity: 41.58
 [' defined self by label # lebal yb fles denifed']
 ```
+
+## Requirements
+    python 2.7
+    tensorflow 0.6.0
+
+Tensorflow can be installed using
+
+    export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.6.0-cp27-none-linux_x86_64.whl
+    pip install --ignore-installed --upgrade $TF_BINARY_URL
