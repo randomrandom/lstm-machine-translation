@@ -43,3 +43,6 @@ Tensorflow can be installed using
 
     export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.6.0-cp27-none-linux_x86_64.whl
     pip install --ignore-installed --upgrade $TF_BINARY_URL
+    
+## My other repositories
+1. [Deep-Atrous-CNN-Text-Network](https://github.com/randomrandom/deep-atrous-cnn-sentiment)
